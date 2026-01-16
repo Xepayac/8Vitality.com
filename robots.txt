@@ -1,0 +1,31 @@
+# Robots.txt for 8vitality.com
+# Allow all good bots, block bad bots, specify sitemap
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /index_old.html
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /resources/
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad/scraper bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://8vitality.com/sitemap.xml

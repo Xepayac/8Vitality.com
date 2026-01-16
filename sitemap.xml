@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://8vitality.com/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://8vitality.com/resources/hero-extra-large.jpg</image:loc>
+            <image:title>Infinite Vitality - Holistic Medicine Seattle</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Policies Page -->
+    <url>
+        <loc>https://8vitality.com/Policies/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- PDF Resources -->
+    <url>
+        <loc>https://8vitality.com/resources/Privacy-Policies.pdf</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://8vitality.com/resources/Terms-and-Conditions.pdf</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://8vitality.com/resources/SMS-Terms-and-Conditions.pdf</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>
