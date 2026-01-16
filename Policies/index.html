@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies | Infinite Vitality - Dr. William E. Leigh III</title>
+    <meta name="description"
+        content="Business policies, privacy practices, and terms & conditions for Infinite Vitality in Seattle, WA.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../resources/favicon_medium.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../resources/favicon_small.png" sizes="16x16">
+
+    <style>
+        .policy-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .policy-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            padding: var(--spacing-md);
+            transition: var(--transition-smooth);
+        }
+
+        .policy-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .policy-card h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .policy-card p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .policy-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+
+        .pdf-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .pdf-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            background-color: #1e4450;
+        }
+
+        .pdf-icon::before {
+            content: "📄";
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../" class="logo">
+                    <img src="../resources/Rainbow-Logo-small.png" alt="Infinite Vitality Logo">
+                    <span>Infinite Vitality</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="../#about" class="nav-item">About</a>
+                    <a href="../#services" class="nav-item">Services</a>
+                    <a href="../#classes" class="nav-item">Classes</a>
+                    <a href="../#location" class="nav-item">Location</a>
+                    <a href="https://william-leigh6091.clientsecure.me" class="btn btn-primary" target="_blank"
+                        rel="noopener">Book Appointment</a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Policies Section -->
+        <section class="section" style="margin-top: 80px; background-color: var(--color-white);">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: var(--spacing-lg);">Business Policies & Legal Documents
+                </h1>
+
+                <div class="policy-grid">
+
+                    <!-- Liability Waiver -->
+                    <article class="policy-card">
+                        <h3>Liability Waiver for Qi Gong & Meditation Classes</h3>
+                        <p>Participants in Qi Gong or Meditation classes acknowledge the physical nature of these
+                            activities and assume responsibility for any risks. This waiver outlines participant
+                            responsibilities and releases Infinite Vitality from liability.</p>
+                        <div class="policy-links">
+                            <a href="../resources/Informed-Consent-for-Acupuncture.pdf" target="_blank"
+                                class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                View Liability Waiver (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Cell Phone/SMS Terms -->
+                    <article class="policy-card">
+                        <h3>SMS Terms & Conditions</h3>
+                        <p>By providing your cell phone number, you consent to receive appointment reminders,
+                            confirmations, and practice updates via text message. Standard messaging rates may apply.
+                        </p>
+                        <div class="policy-links">
+                            <a href="../resources/SMS-Terms-and-Conditions.pdf" target="_blank" class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                View SMS Terms (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Business Terms -->
+                    <article class="policy-card">
+                        <h3>Business Practices, Terms & Conditions</h3>
+                        <p>Our business policies include cancellation procedures, payment terms, scheduling guidelines,
+                            and general terms of service for all therapeutic services offered at Infinite Vitality.</p>
+                        <div class="policy-links">
+                            <a href="../resources/Terms-and-Conditions.pdf" target="_blank" class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                View Terms & Conditions (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Privacy Policy / HIPAA -->
+                    <article class="policy-card">
+                        <h3>Notice of Privacy Practices (HIPAA)</h3>
+                        <p>This document outlines how your protected health information may be used and disclosed, and
+                            how you can access this information in accordance with HIPAA regulations.</p>
+                        <div class="policy-links">
+                            <a href="../resources/Privacy-Policies.pdf" target="_blank" class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                View Privacy Policy (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Consent Forms -->
+                    <article class="policy-card">
+                        <h3>Informed Consent for Treatment</h3>
+                        <p>Consent forms for acupuncture and Eastern medicine treatments explain procedures, potential
+                            risks, and patient rights. These forms are required before beginning treatment.</p>
+                        <div class="policy-links">
+                            <a href="../resources/Consent-for-Eaastern-Medicine.pdf" target="_blank" class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                Eastern Medicine Consent (PDF)
+                            </a>
+                            <a href="../resources/Informed-Consent-for-Acupuncture.pdf" target="_blank"
+                                class="pdf-link">
+                                <span class="pdf-icon"></span>
+                                Acupuncture Consent (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div
+                    style="text-align: center; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: rgba(232, 220, 200, 0.3); border-radius: var(--radius-md);">
+                    <p><strong>Questions about our policies?</strong></p>
+                    <p>Please contact us at <a href="https://william-leigh6091.clientsecure.me"
+                            style="color: var(--color-accent); text-decoration: underline;">william-leigh6091.clientsecure.me</a>
+                        or during your appointment.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Infinite Vitality</div>
+            <div class="footer-nav">
+                <a href="../">Home</a>
+                <a href="../#services">Services</a>
+                <a href="../#classes">Classes</a>
+                <a href="../#location">Location</a>
+                <a href="./">Policies</a>
+                <a href="https://william-leigh6091.clientsecure.me" target="_blank" rel="noopener">Client Portal</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Infinite Vitality | Dr. William E. Leigh III DAOM AEMP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function () {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    this.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                // Close menu when clicking nav links
+                const navItems = navLinks.querySelectorAll('a');
+                navItems.forEach(item => {
+                    item.addEventListener('click', function () {
+                        menuToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
