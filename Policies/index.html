@@ -82,6 +82,10 @@
             content: "📄";
             font-size: 1.2em;
         }
+
+        #pricing-policies {
+            scroll-margin-top: 100px;
+        }
     </style>
 </head>
 
@@ -122,6 +126,20 @@
                 </h1>
 
                 <div class="policy-grid">
+
+                    <!-- Pricing & Practice Policies Link (New Top Card) -->
+                    <article class="policy-card" style="border: 2px solid var(--color-accent);">
+                        <h3>Pricing & Practice Policies</h3>
+                        <p>Detailed information regarding our pricing structure, cancellation policy, lateness policy,
+                            insurance coverage, and clinic directions.</p>
+                        <div class="policy-links">
+                            <a href="#pricing-policies" class="pdf-link"
+                                style="background-color: var(--color-primary);">
+                                <span style="margin-right: 8px;">📋</span>
+                                View Pricing & Policies
+                            </a>
+                        </div>
+                    </article>
 
                     <!-- Liability Waiver -->
                     <article class="policy-card">
@@ -197,7 +215,7 @@
                     </article>
 
                     <!-- Pricing & Practice Policies -->
-                    <article class="policy-card">
+                    <article class="policy-card" id="pricing-policies">
                         <h3>Pricing & Practice Policies</h3>
 
                         <h4 style="color: var(--color-accent); margin-top: 1.5rem; margin-bottom: 0.75rem;">Cancellation
