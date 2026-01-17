@@ -337,6 +337,43 @@ button:focus,
     margin: 0 auto var(--spacing-md);
 }
 
+/* New Client Promotion Section */
+.new-client-promo-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.promo-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promo-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.promo-text {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.promo-badge {
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    text-align: center;
+    margin: var(--spacing-md) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.promo-badge p:nth-child(2) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Services Grid */
 .services {
     background-color: #F7FAFC;
@@ -661,6 +698,20 @@ footer {
 
     .map-actions .btn {
         width: 100%;
+    }
+
+    /* Promo section mobile */
+    .promo-content {
+        flex-direction: column-reverse;
+    }
+
+    .promo-image,
+    .promo-text {
+        min-width: 100%;
+    }
+
+    .promo-badge p:nth-child(2) {
+        font-size: 2rem !important;
     }
 
     /* Footer */
