@@ -546,8 +546,8 @@ button:focus,
 
 /* Footer */
 footer {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+    background: linear-gradient(135deg, #3d2117 0%, #4a2820 50%, #3d2117 100%);
+    color: #ffffff;
     padding: var(--spacing-lg) 0 var(--spacing-md);
     margin-top: auto;
 }
