@@ -414,73 +414,85 @@
         <!-- Location Section -->
         <section id="location" class="section location">
             <div class="container location-container">
-                <h2>Visit the Clinic</h2>
+                <h2 style="margin-bottom: 1rem;">Visit the Clinic</h2>
 
                 <!-- Map Links -->
-                <div class="map-links-centered">
+                <div class="map-links-centered" style="margin: 1rem 0 2rem;">
                     <a href="https://maps.apple.com/?address=1423+34th+Ave,Suite+B,Seattle,WA+89122" target="_blank"
-                        class="btn btn-primary">📍 Open in Apple Maps</a>
+                        class="btn btn-primary">📍 Apple Maps</a>
                     <a href="https://www.google.com/maps/search/Infinite+Vitality+1423+34th+Ave,+Suite+B,+Seattle+WA+89122"
-                        target="_blank" class="btn btn-primary">📍 Open in Google Maps</a>
+                        target="_blank" class="btn btn-primary">📍 Google Maps</a>
                 </div>
 
                 <!-- Stacked Wide Cards -->
                 <div class="location-cards-stacked">
 
-                    <!-- Address Card -->
+                    <!-- Hours Card (First) -->
                     <div class="location-wide-card">
-                        <h3>SOMA-Loft (Above Red Cow)</h3>
-                        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                            <div>
-                                <p style="margin: 0;"><strong>Infinite Vitality</strong></p>
-                                <p style="margin: 0;">Dr. William E. Leigh III</p>
-                            </div>
-                            <div>
-                                <p style="margin: 0;">1423 34th Ave, Suite B</p>
-                                <p style="margin: 0;">Seattle, WA 98122</p>
-                            </div>
-                            <div>
-                                <p style="margin: 0;">📞 (206) 565-2986</p>
-                                <p style="margin: 0;">✉️ hello@8vitality.com</p>
-                            </div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Clinic Hours</h3>
+                        <div
+                            style="display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1.5rem; max-width: 500px; margin: 0 auto; font-size: 0.95rem;">
+                            <strong>Saturday & Sunday:</strong>
+                            <span>11:00 AM - 7:00 PM</span>
+                            <strong>Tuesday:</strong>
+                            <span>11:00 AM - 6:00 PM</span>
+                            <strong>Wednesday:</strong>
+                            <span>3:30 PM - 9:00 PM</span>
                         </div>
                     </div>
 
-                    <!-- Hours Card -->
+                    <!-- Directions & Parking Card (Second) -->
                     <div class="location-wide-card">
-                        <h3>Clinic Hours</h3>
-                        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                            <p style="margin: 0;"><strong>Saturday & Sunday:</strong> 11:00 AM - 7:00 PM</p>
-                            <p style="margin: 0;"><strong>Tuesday:</strong> 11:00 AM - 6:00 PM</p>
-                            <p style="margin: 0;"><strong>Wednesday:</strong> 3:30 PM - 9:00 PM</p>
-                        </div>
-                    </div>
-
-                    <!-- Directions & Parking Card -->
-                    <div class="location-wide-card">
-                        <h3>Directions & Parking</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Directions & Parking</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 0.9rem;">
                             <div>
-                                <p style="margin-bottom: 0.5rem;"><strong>📍 Finding the SOMA-Loft:</strong></p>
+                                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">📍 Finding Us:</p>
                                 <p
-                                    style="background: rgba(232, 220, 200, 0.3); padding: 0.75rem; border-radius: 8px; margin-bottom: 0.75rem; font-size: 0.95rem;">
-                                    Located <strong>above The Red Cow restaurant</strong>
+                                    style="background: rgba(232, 220, 200, 0.3); padding: 0.5rem; border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.85rem;">
+                                    Above <strong>The Red Cow</strong> restaurant
                                 </p>
-                                <ol style="line-height: 1.6; margin-left: 1.25rem; font-size: 0.95rem;">
-                                    <li>Find <strong>The Red Cow</strong> restaurant</li>
-                                    <li>Stairs <strong>next to entrance door</strong></li>
-                                    <li>Walk up & enter <strong>green door</strong></li>
-                                    <li>Look for <strong>SOMA-Loft</strong> sign → Suite B</li>
+                                <ol style="line-height: 1.5; margin: 0 0 0 1.25rem; padding: 0; font-size: 0.85rem;">
+                                    <li>Find The Red Cow at street level</li>
+                                    <li>Stairs next to entrance door</li>
+                                    <li>Green door at top → Suite B</li>
                                 </ol>
                             </div>
                             <div>
-                                <p style="margin-bottom: 0.5rem;"><strong>🅿️ Parking Information:</strong></p>
+                                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">🅿️ Parking:</p>
                                 <p
-                                    style="background: rgba(44, 95, 111, 0.08); padding: 0.75rem; border-radius: 8px; font-size: 0.95rem; line-height: 1.6;">
-                                    <strong>Street parking is always available</strong> on local streets surrounding the
-                                    clinic. There is no paid parking required in this area.
+                                    style="background: rgba(44, 95, 111, 0.08); padding: 0.75rem; border-radius: 6px; margin: 0; font-size: 0.85rem; line-height: 1.5;">
+                                    Free street parking available on surrounding streets. No paid parking required.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Card (Third) -->
+                    <div class="location-wide-card">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Contact Information</h3>
+                        <div
+                            style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; font-size: 0.9rem;">
+                            <div style="text-align: center;">
+                                <p style="margin: 0; font-weight: 600;">📞 Phone</p>
+                                <p style="margin: 0.25rem 0 0;">(206) 565-2986</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <p style="margin: 0; font-weight: 600;">✉️ Email</p>
+                                <p style="margin: 0.25rem 0 0;">hello@8vitality.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Card (Fourth) -->
+                    <div class="location-wide-card">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Address</h3>
+                        <div style="text-align: center; font-size: 0.9rem;">
+                            <p style="margin: 0; font-weight: 600;">SOMA-Loft, Suite B</p>
+                            <p style="margin: 0.25rem 0;">1423 34th Ave, Seattle, WA 98122</p>
+                            <p
+                                style="margin: 0.5rem 0 0; font-style: italic; color: var(--color-secondary); font-size: 0.85rem;">
+                                Dr. William E. Leigh III DAOM AEMP
+                            </p>
                         </div>
                     </div>
 
