@@ -524,6 +524,16 @@ button:focus,
     text-align: center;
 }
 
+/* Directions box styling */
+.directions-box {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(44, 95, 111, 0.2);
+}
+
+.directions-box ol li {
+    margin-bottom: 0.5rem;
+}
+
 .map-actions {
     display: flex;
     flex-direction: column;
