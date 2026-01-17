@@ -401,6 +401,14 @@ button:focus,
     color: var(--color-primary);
 }
 
+.service-pricing {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin: -0.5rem 0 0.75rem 0 !important;
+    font-style: italic;
+}
+
 .service-content p {
     font-size: 1.05rem;
     line-height: 1.7;
@@ -444,10 +452,10 @@ button:focus,
 
 .location-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -464,6 +472,19 @@ button:focus,
 .address-box h3 {
     text-align: center;
     margin-bottom: var(--spacing-sm);
+}
+
+/* Pricing box special styling */
+.pricing-box {
+    background: rgba(232, 220, 200, 0.3);
+    border: 2px solid var(--color-accent);
+}
+
+.new-client-promo {
+    background: rgba(44, 95, 111, 0.08);
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    text-align: center;
 }
 
 .map-actions {
