@@ -205,7 +205,7 @@ nav {
 }
 
 .nav-links a.nav-item:hover {
-    color: var(--color-accent);
+    color: #ff3333;
 }
 
 /* Mobile Menu Toggle */
@@ -575,7 +575,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: var(--color-accent);
+    color: #00d9ff;
     text-decoration: underline;
 }
 
