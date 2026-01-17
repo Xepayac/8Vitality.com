@@ -487,59 +487,62 @@ button:focus,
     text-align: center;
 }
 
-.location-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+/* Location Section */
+.location {
+    background-color: var(--color-bg-alt);
+    padding: var(--spacing-xl) 0;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Centered Map Links */
+.map-links-centered {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: var(--spacing-lg) 0;
+}
+
+.map-links-centered .btn {
+    min-width: 200px;
+}
+
+/* Stacked Wide Cards */
+.location-cards-stacked {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-md);
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.address-box {
-    background: rgba(255, 255, 255, 0.5);
+.location-wide-card {
+    background: rgba(255, 255, 255, 0.7);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     border: 1px solid rgba(45, 80, 22, 0.1);
-    display: flex;
-    flex-direction: column;
     text-align: left;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
 }
 
-.address-box h3 {
+.location-wide-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.location-wide-card h3 {
     text-align: center;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
 }
 
-/* Pricing box special styling */
-.pricing-box {
-    background: rgba(232, 220, 200, 0.3);
-    border: 2px solid var(--color-accent);
-}
-
-.new-client-promo {
-    background: rgba(44, 95, 111, 0.08);
-    padding: 0.75rem;
-    border-radius: var(--radius-md);
-    text-align: center;
-}
-
-/* Directions box styling */
-.directions-box {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(44, 95, 111, 0.2);
-}
-
-.directions-box ol li {
-    margin-bottom: 0.5rem;
-}
-
-.map-actions {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
-}
 
 /* Footer */
 footer {
@@ -697,17 +700,21 @@ footer {
         text-align: center;
     }
 
-    /* Location cards stack on mobile */
-    .location-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .map-actions {
+    /* Location section mobile */
+    .map-links-centered {
         flex-direction: column;
     }
 
-    .map-actions .btn {
+    .map-links-centered .btn {
         width: 100%;
+    }
+
+    .location-wide-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .location-wide-card div[style*="grid"] {
+        grid-template-columns: 1fr !important;
     }
 
     /* Promo section mobile */

@@ -415,71 +415,75 @@
         <section id="location" class="section location">
             <div class="container location-container">
                 <h2>Visit the Clinic</h2>
-                <div class="location-cards">
-                    <div class="address-box">
+
+                <!-- Map Links -->
+                <div class="map-links-centered">
+                    <a href="https://maps.apple.com/?address=1423+34th+Ave,Suite+B,Seattle,WA+89122" target="_blank"
+                        class="btn btn-primary">📍 Open in Apple Maps</a>
+                    <a href="https://www.google.com/maps/search/Infinite+Vitality+1423+34th+Ave,+Suite+B,+Seattle+WA+89122"
+                        target="_blank" class="btn btn-primary">📍 Open in Google Maps</a>
+                </div>
+
+                <!-- Stacked Wide Cards -->
+                <div class="location-cards-stacked">
+
+                    <!-- Address Card -->
+                    <div class="location-wide-card">
                         <h3>SOMA-Loft (Above Red Cow)</h3>
-                        <p><strong>Infinite Vitality</strong></p>
-                        <p>Dr. William E. Leigh III</p>
-                        <p>1423 34th Ave, Suite B</p>
-                        <p>Seattle, WA 98122</p>
-
-                        <div class="map-actions">
-                            <a href="https://maps.apple.com/?address=1423+34th+Ave,Suite+B,Seattle,WA+89122"
-                                target="_blank" class="btn btn-outline" style="border-width: 1px;">Open in Apple
-                                Maps</a>
-                            <a href="https://www.google.com/maps/search/Infinite+Vitality+1423+34th+Ave,+Suite+B,+Seattle+WA+89122"
-                                target="_blank" class="btn btn-outline" style="border-width: 1px;">Open in Google
-                                Maps</a>
+                        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                            <div>
+                                <p style="margin: 0;"><strong>Infinite Vitality</strong></p>
+                                <p style="margin: 0;">Dr. William E. Leigh III</p>
+                            </div>
+                            <div>
+                                <p style="margin: 0;">1423 34th Ave, Suite B</p>
+                                <p style="margin: 0;">Seattle, WA 98122</p>
+                            </div>
+                            <div>
+                                <p style="margin: 0;">📞 (206) 565-2986</p>
+                                <p style="margin: 0;">✉️ hello@8vitality.com</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="address-box">
+                    <!-- Hours Card -->
+                    <div class="location-wide-card">
                         <h3>Clinic Hours</h3>
-                        <p><strong>Saturday &amp; Sunday:</strong> 11:00 AM - 7:00 PM</p>
-                        <p><strong>Tuesday:</strong> 11:00 AM - 6:00 PM</p>
-                        <p><strong>Wednesday:</strong> 3:30 PM - 9:00 PM</p>
-                    </div>
-
-                    <div class="address-box pricing-box">
-                        <h3>Session Pricing</h3>
-                        <div class="new-client-promo">
-                            <p style="margin: 0; font-size: 0.9rem; color: var(--color-accent); font-weight: 600;">✨ NEW
-                                CLIENT SPECIAL ✨</p>
-                            <p style="margin: 0.25rem 0 0.5rem; font-size: 1.1rem;"><strong>90 Minutes - $80</strong>
-                            </p>
+                        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                            <p style="margin: 0;"><strong>Saturday & Sunday:</strong> 11:00 AM - 7:00 PM</p>
+                            <p style="margin: 0;"><strong>Tuesday:</strong> 11:00 AM - 6:00 PM</p>
+                            <p style="margin: 0;"><strong>Wednesday:</strong> 3:30 PM - 9:00 PM</p>
                         </div>
-                        <hr style="border: none; border-top: 1px solid rgba(45, 80, 22, 0.2); margin: 1rem 0;">
-                        <p><strong>Acupuncture/Craniosacral:</strong> 45 min - $120</p>
-                        <p><strong>Bodywork/SI:</strong> 90 min - $210</p>
-                        <p style="margin-bottom: 0;"><strong>Classes:</strong> 60 min - $20</p>
                     </div>
 
-                    <div class="address-box directions-box">
+                    <!-- Directions & Parking Card -->
+                    <div class="location-wide-card">
                         <h3>Directions & Parking</h3>
-
-                        <p style="margin-bottom: 1rem;"><strong>📍 Finding the SOMA-Loft:</strong></p>
-
-                        <p
-                            style="background: rgba(232, 220, 200, 0.3); padding: 0.75rem; border-radius: 8px; margin-bottom: 1rem;">
-                            We are located <strong>above The Red Cow restaurant</strong> in the SOMA-Loft building.
-                        </p>
-
-                        <ol style="line-height: 1.8; margin-left: 1.25rem; margin-bottom: 1rem;">
-                            <li>Locate <strong>The Red Cow</strong> restaurant at street level</li>
-                            <li>Find the stairs <strong>directly next to the restaurant's entrance door</strong></li>
-                            <li>Walk up the stairs</li>
-                            <li>Enter the <strong>green door</strong> at the top</li>
-                            <li>Look for the <strong>"SOMA-Loft"</strong> sign</li>
-                            <li>Infinite Vitality is <strong>Suite B</strong></li>
-                        </ol>
-
-                        <p style="margin-bottom: 1rem;"><strong>🅿️ Parking Information:</strong></p>
-                        <p
-                            style="background: rgba(44, 95, 111, 0.08); padding: 0.75rem; border-radius: 8px; margin-bottom: 0;">
-                            <strong>Street parking is always available</strong> on local streets surrounding the clinic.
-                            There is no paid parking required in this area.
-                        </p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div>
+                                <p style="margin-bottom: 0.5rem;"><strong>📍 Finding the SOMA-Loft:</strong></p>
+                                <p
+                                    style="background: rgba(232, 220, 200, 0.3); padding: 0.75rem; border-radius: 8px; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                                    Located <strong>above The Red Cow restaurant</strong>
+                                </p>
+                                <ol style="line-height: 1.6; margin-left: 1.25rem; font-size: 0.95rem;">
+                                    <li>Find <strong>The Red Cow</strong> restaurant</li>
+                                    <li>Stairs <strong>next to entrance door</strong></li>
+                                    <li>Walk up & enter <strong>green door</strong></li>
+                                    <li>Look for <strong>SOMA-Loft</strong> sign → Suite B</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0.5rem;"><strong>🅿️ Parking Information:</strong></p>
+                                <p
+                                    style="background: rgba(44, 95, 111, 0.08); padding: 0.75rem; border-radius: 8px; font-size: 0.95rem; line-height: 1.6;">
+                                    <strong>Street parking is always available</strong> on local streets surrounding the
+                                    clinic. There is no paid parking required in this area.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
