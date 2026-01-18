@@ -764,8 +764,17 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-        height: auto;
         aspect-ratio: 1/1;
+        position: relative;
+    }
+
+    .service-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .promo-content {
