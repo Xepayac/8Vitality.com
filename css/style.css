@@ -951,7 +951,7 @@ footer {
 
 /* Phone Number Reveal Effect */
 .phone-reveal {
-    color: #ffffff;
+    color: inherit;
     text-decoration: underline;
     text-underline-offset: 4px;
     transition: var(--transition-smooth);
