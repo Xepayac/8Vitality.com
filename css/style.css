@@ -331,7 +331,7 @@ footer {
 /* =========================================
    4. DESKTOP LAYOUT (Strict Separation)
    ========================================= */
-@media (min-width: 769px) {
+@media (min-width: 601px) {
 
     /* Nav */
     .nav-links {
@@ -525,7 +525,7 @@ footer {
 /* =========================================
    5. MOBILE LAYOUT (Strict Separation)
    ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     /* Responsive Typography */
     h1 {
@@ -753,9 +753,9 @@ footer {
 }
 
 /* =========================================
-   6. TABLET/PRO (769px - 1024px)
+   6. TABLET/PRO (601px - 1024px)
    ========================================= */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     .service-card {
         flex-direction: column;
     }
