@@ -784,6 +784,34 @@ footer {
     .section {
         padding: var(--spacing-lg) 0;
     }
+
+    /* Footer buttons - ensure touch-friendly sizing */
+    footer .btn,
+    footer .spwidget-button {
+        width: 100%;
+        max-width: 300px;
+        min-height: 44px;
+        padding: 14px 28px;
+        font-size: 1rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Map buttons - stack vertically on mobile */
+    footer div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    footer div[style*="display: flex"] a {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer spacing adjustments for mobile */
+    footer div[style*="margin: 1.5rem"] {
+        margin: 1rem 0 !important;
+    }
 }
 
 /* Tablet pro optimization */
