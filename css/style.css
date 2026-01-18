@@ -302,6 +302,15 @@ footer {
 }
 
 /* Cards & Sections */
+.location-cards-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .location-wide-card,
 .service-card,
 .policy-card {
