@@ -767,6 +767,11 @@ footer {
         height: auto;
         aspect-ratio: 1/1;
     }
+
+    .promo-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 /* =========================================
