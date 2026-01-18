@@ -753,9 +753,9 @@ footer {
 }
 
 /* =========================================
-   6. TABLET/PRO (481px - 1024px)
+   6. TABLET/PRO (481px - 960px)
    ========================================= */
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 960px) {
     .service-card {
         flex-direction: column;
     }
