@@ -948,3 +948,27 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Phone Number Reveal Effect */
+.phone-reveal {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: var(--transition-smooth);
+}
+
+.phone-reveal .number-text {
+    display: none;
+}
+
+.phone-reveal:hover {
+    text-decoration: none;
+}
+
+.phone-reveal:hover .click-text {
+    display: none;
+}
+
+.phone-reveal:hover .number-text {
+    display: inline;
+}
