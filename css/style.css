@@ -812,6 +812,12 @@ footer {
     footer div[style*="margin: 1.5rem"] {
         margin: 1rem 0 !important;
     }
+
+    /* Reduce spacer image size on mobile */
+    .section-spacer img {
+        width: 90px;
+        max-width: 90px;
+    }
 }
 
 /* Tablet pro optimization */
