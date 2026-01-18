@@ -735,7 +735,7 @@ footer {
         font-size: 1.25rem;
     }
 
-    .location-wide-card div[style*="grid"] {
+    .mobile-stack {
         grid-template-columns: 1fr !important;
     }
 
@@ -832,6 +832,7 @@ footer {
         max-width: 1400px;
     }
 }
+
 /* ------------------------------
    Policy Page Styles
    ------------------------------ */
@@ -905,7 +906,7 @@ footer {
 }
 
 /* Reduce spacing between subheadings and lists */
-.policy-card h3 + ul {
+.policy-card h3+ul {
     margin-top: -0.5rem;
 }
 
@@ -914,9 +915,10 @@ footer {
    ------------------------------ */
 @media (max-width: 768px) {
     .policy-grid {
-        gap: 1.5rem; /* Reduced from 3rem for mobile */
+        gap: 1.5rem;
+        /* Reduced from 3rem for mobile */
     }
-    
+
     .policy-card {
         padding: 1.25rem;
     }
@@ -929,7 +931,8 @@ footer {
     .policy-links a {
         font-size: 0.9rem;
         padding: 10px 16px;
-        flex: 1 1 auto; /* fluid width buttons */
+        flex: 1 1 auto;
+        /* fluid width buttons */
         justify-content: center;
         text-align: center;
     }
@@ -940,11 +943,12 @@ footer {
         -webkit-overflow-scrolling: touch;
         margin-bottom: 1rem;
         border-radius: 8px;
-        border: 1px solid rgba(0,0,0,0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
     }
-    
+
     .policy-card table {
-        min-width: 600px; /* Force horizontal scroll */
+        min-width: 600px;
+        /* Force horizontal scroll */
         font-size: 0.9rem;
     }
 }
