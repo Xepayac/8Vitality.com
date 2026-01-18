@@ -135,7 +135,7 @@ p {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
@@ -361,12 +361,12 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-lg);
-        max-width: 1400px;
+        max-width: 960px;
     }
 
     .hero-image {
         width: 100%;
-        max-width: 1400px;
+        max-width: 960px;
         display: flex;
         justify-content: center;
     }
@@ -451,7 +451,7 @@ footer {
         display: flex;
         gap: var(--spacing-lg);
         align-items: center;
-        max-width: 1200px;
+        max-width: 960px;
         margin: 0 auto;
         flex-direction: row;
     }
@@ -788,6 +788,6 @@ footer {
    ========================================= */
 @media (min-width: 1400px) {
     .container {
-        max-width: 1400px;
+        max-width: 960px;
     }
 }
