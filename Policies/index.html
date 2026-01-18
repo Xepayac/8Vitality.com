@@ -47,85 +47,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://8vitality.com/Policies/">
 
-    <style>
-        .policy-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .policy-card {
-            background: var(--color-white);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-            padding: var(--spacing-md);
-            transition: var(--transition-smooth);
-        }
-
-        .policy-card:hover {
-            box-shadow: var(--shadow-lg);
-        }
-
-        .policy-card h2 {
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .policy-card p {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .policy-card h3 {
-            font-size: 1.5rem;
-            color: var(--color-accent);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .policy-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--spacing-sm);
-        }
-
-        .pdf-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background-color: var(--color-accent);
-            color: var(--color-white);
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition-smooth);
-        }
-
-        .pdf-link:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-            background-color: #1e4450;
-        }
-
-        .pdf-icon::before {
-            content: "📄";
-            font-size: 1.2em;
-        }
-
-        #pricing-policies {
-            scroll-margin-top: 100px;
-        }
-
-        /* Reduce spacing between subheadings and lists */
-        .policy-card p strong {
-            display: block;
-        }
-
-        .policy-card p:has(strong) {
-            margin-bottom: 0.5rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -384,55 +305,60 @@
                                 insurance at $350. The discounted time-of-service price is $210.</p>
                         </div>
 
-                        <table style="width: 100%; margin: 1rem 0; border-collapse: collapse;">
-                            <thead>
-                                <tr style="background: rgba(44, 95, 111, 0.1);">
-                                    <th
-                                        style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        Service</th>
-                                    <th
-                                        style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        Time-of-Service Price</th>
-                                    <th
-                                        style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        Insurance Billed Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        Acupuncture/Craniosacral (45 min)</td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        <strong>$120</strong>
-                                    </td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">$200</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">Bodywork/SI
-                                        (90 min)</td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        <strong>$210</strong>
-                                    </td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">$350</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">Classes (60
-                                        min)</td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        <strong>$20</strong>
-                                    </td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">N/A</td>
-                                </tr>
-                                <tr style="background: rgba(232, 220, 200, 0.3);">
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);"><strong>New
-                                            Client Special (90 min)</strong></td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
-                                        <strong>$80</strong>
-                                    </td>
-                                    <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">N/A</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-wrapper">
+                            <table style="width: 100%; margin: 1rem 0; border-collapse: collapse;">
+                                <thead>
+                                    <tr style="background: rgba(44, 95, 111, 0.1);">
+                                        <th
+                                            style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            Service</th>
+                                        <th
+                                            style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            Time-of-Service Price</th>
+                                        <th
+                                            style="padding: 0.5rem; text-align: left; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            Insurance Billed Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            Acupuncture/Craniosacral (45 min)</td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            <strong>$120</strong>
+                                        </td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            Bodywork/SI
+                                            (90 min)</td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            <strong>$210</strong>
+                                        </td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">$350</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">Classes
+                                            (60
+                                            min)</td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            <strong>$20</strong>
+                                        </td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">N/A</td>
+                                    </tr>
+                                    <tr style="background: rgba(232, 220, 200, 0.3);">
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            <strong>New
+                                                Client Special (90 min)</strong></td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">
+                                            <strong>$80</strong>
+                                        </td>
+                                        <td style="padding: 0.5rem; border: 1px solid rgba(45, 80, 22, 0.2);">N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </article>
 
                     <!-- Location & Directions -->

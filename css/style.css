@@ -832,3 +832,119 @@ footer {
         max-width: 1400px;
     }
 }
+/* ------------------------------
+   Policy Page Styles
+   ------------------------------ */
+.policy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.policy-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-md);
+    transition: var(--transition-smooth);
+}
+
+.policy-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.policy-card h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.policy-card p {
+    margin-bottom: var(--spacing-md);
+}
+
+.policy-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.pdf-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background-color: #1e4450;
+}
+
+.pdf-icon::before {
+    content: "📄";
+    font-size: 1.2em;
+}
+
+#pricing-policies {
+    scroll-margin-top: 100px;
+}
+
+/* Reduce spacing between subheadings and lists */
+.policy-card h3 + ul {
+    margin-top: -0.5rem;
+}
+
+/* ------------------------------
+   Mobile Optimization for Policies
+   ------------------------------ */
+@media (max-width: 768px) {
+    .policy-grid {
+        gap: 1.5rem; /* Reduced from 3rem for mobile */
+    }
+    
+    .policy-card {
+        padding: 1.25rem;
+    }
+
+    /* Wrap quick links for touch targets */
+    .policy-links {
+        gap: 0.5rem;
+    }
+
+    .policy-links a {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+        flex: 1 1 auto; /* fluid width buttons */
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Responsive Table Styles */
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .policy-card table {
+        min-width: 600px; /* Force horizontal scroll */
+        font-size: 0.9rem;
+    }
+}
