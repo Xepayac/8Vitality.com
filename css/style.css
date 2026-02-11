@@ -51,7 +51,8 @@ body {
     background-color: var(--color-bg);
     line-height: 1.6;
     overflow-x: hidden;
-    height: 100%;
+    min-height: 100vh;
+    /* Changed from height: 100% for better scroll behavior */
     display: flex;
     flex-direction: column;
 }
@@ -60,10 +61,19 @@ ul {
     list-style: none;
 }
 
+/* Updated to ensure images behave well in flex containers */
 img {
     max-width: 100%;
     display: block;
     height: auto;
+    width: auto;
+    /* Explicit auto width helpful for Safari */
+}
+
+/* Main takes up remaining space */
+main {
+    flex: 1 0 auto;
+    width: 100%;
 }
 
 a {
@@ -376,8 +386,14 @@ footer {
     .hero-image {
         width: 100%;
         max-width: 960px;
-        display: flex;
-        justify-content: center;
+        display: block;
+        /* Changed from flex for Safari stability */
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
     }
 
     .hero-text {
@@ -468,6 +484,11 @@ footer {
     .promo-image {
         flex: 1;
         min-width: 300px;
+    }
+
+    .promo-image img {
+        width: 100%;
+        height: auto;
     }
 
     .promo-text {
@@ -773,8 +794,9 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-        height: auto;
-        aspect-ratio: 1/1;
+        height: 0;
+        /* Padding hack for aspect ratio */
+        padding-bottom: 100%;
         position: relative;
     }
 

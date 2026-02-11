@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//8Vitality AI Assistant//EN
+BEGIN:VEVENT
+UID:marketing-email-reminder-8vitality
+DTSTAMP:20260122T173000Z
+DTSTART:20260201T180000Z
+DTEND:20260201T190000Z
+RRULE:FREQ=MONTHLY;BYMONTHDAY=1
+SUMMARY:🚀 Send 8Vitality Monthly Marketing Email
+DESCRIPTION:Time to engage your clients!\n\nChecklist:\n1. Update 'email_template.html' with this month's special.\n2. Verify client list.\n3. Run 'python3 send_campaign.py'.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Marketing Email Time
+END:VALARM
+END:VEVENT
+END:VCALENDAR
