@@ -50,7 +50,7 @@
 3. Enter business name: "Infinite Vitality"
 4. Choose category: "Acupuncturist" or "Holistic Medicine Practitioner"
 5. Add location: 1423 34th Ave, Suite B, Seattle, WA 98122
-6. Add phone: (206) 565-2986
+6. Add phone: 206-407-5029
 7. Add website: https://8vitality.com
 8. Add hours:
    - Sat-Sun: 11AM-7PM
@@ -119,7 +119,7 @@
 **Critical:** Use EXACT same information everywhere:
 - Name: Infinite Vitality
 - Address: 1423 34th Ave, Suite B, Seattle, WA 98122
-- Phone: (206) 565-2986
+- Phone: 206-407-5029
 - Website: https://8vitality.com
 
 ---

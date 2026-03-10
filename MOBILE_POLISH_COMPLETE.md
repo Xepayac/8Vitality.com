@@ -159,7 +159,7 @@ All files updated:
 ## 📝 **NOTES**
 
 **Schema.org Contact Info**: 
-- Phone: +1-206-555-0100 (placeholder - update if you have actual number)
+- Phone: 206-407-5029
 - Email: contact@8vitality.com (placeholder - update if you have actual email)
 
 **Update these in** `index.html` lines 356-357 before deploying!
