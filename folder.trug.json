@@ -1,0 +1,99 @@
+{
+  "name": "8Vitality.com",
+  "version": "1.0.0",
+  "type": "REPOSITORY",
+  "description": "8Vitality acupuncture practice website — first email chatbot customer. Static site with email automation.",
+  "dimensions": {
+    "website": {
+      "description": "Static website: HTML, CSS, resources, email automation",
+      "base_level": "BASE"
+    }
+  },
+  "capabilities": {
+    "extensions": [],
+    "vocabularies": [],
+    "profiles": []
+  },
+  "meta": {
+    "generated_by": "manual",
+    "last_synced": "2026-04-05",
+    "owner": "Xepayac",
+    "license": "Private",
+    "repository": "https://github.com/Xepayac/8Vitality.com"
+  },
+  "nodes": [
+    {
+      "id": "repo_root",
+      "type": "REPOSITORY",
+      "properties": {
+        "name": "8Vitality.com",
+        "description": "Practice website with TRUG-constrained email chatbot."
+      },
+      "parent_id": null,
+      "contains": ["comp_site", "comp_css", "comp_resources", "comp_email", "comp_policies"],
+      "metric_level": "KILO_REPOSITORY",
+      "dimension": "website"
+    },
+    {
+      "id": "comp_site",
+      "type": "FILE",
+      "properties": {
+        "name": "index.html",
+        "description": "Main website page"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_FILE",
+      "dimension": "website"
+    },
+    {
+      "id": "comp_css",
+      "type": "MODULE",
+      "properties": {
+        "name": "css/",
+        "description": "Stylesheets"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_MODULE",
+      "dimension": "website"
+    },
+    {
+      "id": "comp_resources",
+      "type": "MODULE",
+      "properties": {
+        "name": "resources/",
+        "description": "Images and static assets"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_MODULE",
+      "dimension": "website"
+    },
+    {
+      "id": "comp_email",
+      "type": "MODULE",
+      "properties": {
+        "name": "email_automation/",
+        "description": "Email chatbot automation — Proton Bridge integration"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_MODULE",
+      "dimension": "website"
+    },
+    {
+      "id": "comp_policies",
+      "type": "MODULE",
+      "properties": {
+        "name": "Policies/",
+        "description": "Practice policies and legal documents"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_MODULE",
+      "dimension": "website"
+    }
+  ],
+  "edges": []
+}
