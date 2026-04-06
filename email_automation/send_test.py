@@ -5,11 +5,14 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
-# Configuration
-config_path = '/Users/dr.leigh/Desktop/8Vitality.com/CLIENT_DATA_SAFE/proton_config.ini'
-template_path = '/Users/dr.leigh/Desktop/8Vitality.com/email_automation/email_template.html'
-image_path = '/Users/dr.leigh/Desktop/8Vitality.com/email_automation/image.png'
-logo_path = '/Users/dr.leigh/Desktop/8Vitality.com/email_automation/logo.png'
+# Configuration — paths relative to repo root, config path from env
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
+config_path = os.environ.get("PROTON_CONFIG", os.path.join(REPO_ROOT, "CLIENT_DATA_SAFE", "proton_config.ini"))
+template_path = os.path.join(SCRIPT_DIR, "email_template.html")
+image_path = os.path.join(SCRIPT_DIR, "image.png")
+logo_path = os.path.join(SCRIPT_DIR, "logo.png")
 
 # Load Config
 config = configparser.ConfigParser()

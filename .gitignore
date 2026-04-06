@@ -1,2 +1,4 @@
 CLIENT_DATA_SAFE/
 .env
+.DS_Store
+*.bak
