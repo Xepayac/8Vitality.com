@@ -30,7 +30,7 @@
         "description": "Practice website with TRUG-constrained email chatbot."
       },
       "parent_id": null,
-      "contains": ["comp_site", "comp_css", "comp_resources", "comp_email", "comp_policies"],
+      "contains": ["comp_site", "comp_css", "comp_resources", "comp_email", "comp_policies", "doc_agent_md"],
       "metric_level": "KILO_REPOSITORY",
       "dimension": "website"
     },
@@ -93,7 +93,25 @@
       "contains": [],
       "metric_level": "BASE_MODULE",
       "dimension": "website"
+    },
+    {
+      "id": "doc_agent_md",
+      "type": "DOCUMENT",
+      "properties": {
+        "name": "AGENT.md",
+        "description": "LLM agent orientation — role, entry points, health-claim editorial gate"
+      },
+      "parent_id": "repo_root",
+      "contains": [],
+      "metric_level": "BASE_DOCUMENT",
+      "dimension": "website"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "from_id": "repo_root",
+      "to_id": "doc_agent_md",
+      "relation": "CONTAINS"
+    }
+  ]
 }
